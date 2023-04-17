@@ -282,7 +282,7 @@ import java.util.Date;
 - **Què permet la referència que retorna el mètode iterator() de la interfície Collection?**
     - Recórrer la col·lecció amb els mètodes next() i hastNext().
     - Eliminar l'element actual amb el mètode remove() sempre que la col·lecció permeti l'eliminació dels seus elements.
-- ** Què permet la interfície ListIterator?**
+- **Què permet la interfície ListIterator?**
     - Recórrer els objectes que implementen la interfície `List` (subinterfície de `Collection`) en ambdues direccions (endavant i endarrere) i efectuar algunes modificacions mentre s’efectua el recorregut.
 - **Quins mètodes defineix la interfície ListIterator?**
 
