@@ -1,3 +1,5 @@
+# Collections
+
 - **Què és una col·lecció?**
     - És una agrupació d’elements (objectes) en la qual s’hi han de poder executar diverses accions: afegir, recórrer, cercar, extreure…
 - **Què és el framework de col·leccions de Java?**
