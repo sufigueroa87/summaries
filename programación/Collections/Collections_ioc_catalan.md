@@ -754,7 +754,7 @@ Contingut de la taula després d'haver estat ordenada:
 
 ### INTERFÍCIE "QUEUE"
 
-- Per a què es destina la interfície Queue&lt;E&gt;?
+- **Per a què es destina la interfície Queue&lt;E&gt;?**
     - Per gestionar col·leccions que guarden múltiples elements abans de ser processats. Per aquest motiu, afegeix els següents mètodes als definit a la interfície Collection:
 
 ```java
@@ -776,9 +776,9 @@ Contingut de la taula després d'haver estat ordenada:
 
 ### INTERFÍCIES "MAP" I "SORTEDMAP"
 
-- Per a què es destina la interfície Map&lt;E&gt;?
+- **Per a què es destina la interfície Map&lt;E&gt;?**
     - Es destina a gestionar agrupacions d’elements als quals s’accedeix mitjançant una clau, la qual ha de ser única per als diferents elements de l’agrupació.
-- Quina és la definició de la interfície Map&lt;E&gt;?
+- **Quina és la definició de la interfície Map&lt;E&gt;?**
 
 ```java
     public interface Map<K,V> {
@@ -810,30 +810,30 @@ Contingut de la taula després d'haver estat ordenada:
     }
 ```
 
-- Què retorna el mètode entrySet()?
+- **Què retorna el mètode entrySet()?**
     - Retorna una visió del `Map` com a `Set`.
     - Els elements d’aquest Set són referències a la interfície `Map.Entry` que és una interfície interna de `Map` que permet modificar i eliminar elements del `Map`, però no afegir-hi nous elements.
-- Què permet el mètode get(key)?
+- **Què permet el mètode get(key)?**
     - Permet obtenir l’element a partir de la clau.
-- Què permet el mètode keySet()?
+- **Què permet el mètode keySet()?**
     - Retorna una visió de les claus com a `Set`.
-- Què retorna el mètode values()?
+- **Què retorna el mètode values()?**
     - Retorna una visió dels elements del `Map` com a `Collection` (perquè hi pot haver elements repetits i com a `Set` això no seria factible).
-- Què permet el mètode put()?
+- **Què permet el mètode put()?**
     - Permet afegir una parella clau/element.
-- Què permet el mètode putAll(map)?
+- **Què permet el mètode putAll(map)?**
     - Permet afegir-hi totes les parelles d’un `Map` passat per paràmetre (les parelles amb clau nova s’afegeixen i, en les parelles amb clau ja existent en el Map, els elements nous substitueixen els elements existents).
-- Què permet el mètode remove(key)?
+- **Què permet el mètode remove(key)?**
     - Permet eliminar una parella clau/element a partir de la clau.
-- Quan retorna true la crida map.equals(Object obj)?
+- **Quan retorna true la crida map.equals(Object obj)?**
     - Si "obj" també és una instància que implementa la interfície `Map` +
     - els dos objectes representen el mateix mapatge o, dit amb altres paraules, si l’expressió següent retorna true:
         - map.entrySet().equals(((Map) obj).entrySet())
-- Per tant, pot ser el resultat de map.equals(Object obj) true encara que "map" i "obj" siguin de classes diferents però implementin a la interfície Map?
+- **Per tant, pot ser el resultat de map.equals(Object obj) true encara que "map" i "obj" siguin de classes diferents però implementin a la interfície Map?**
     - Sí.
-- Què permet la interfície SortedMap?
+- **Què permet la interfície SortedMap?**
     - És una interfície `Map` que permet mantenir ordenades les seves parelles en ordre ascendent segons el valor de la clau, seguint l’ordre natural o la relació d’ordre proporcionada per un objecte que implementi la interfície `Comparator` proporcionada en el moment de creació de la instància.
-- Quina és la definició de la interfície SortedMap?
+- **Quina és la definició de la interfície SortedMap?**
 
 ```java
     public interface SortedMap<K, V> extends Map<K, V> {
